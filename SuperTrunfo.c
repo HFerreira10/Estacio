@@ -69,10 +69,8 @@ int main(){
     printf("Abaixo você irá visualizar os dados das cartas que você digitou. \n");
     printf("Carta 1: \n");
     printf("Estado: %c\n", estado1);
-    printf("Estado: %c\nCódigo: %s\nCidade: %s\n", estado1, codigoCarta1, nomeCidade1);
-
-    //printf("Código: %s\n", codigoCarta1);
-    //printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("Código: %s\n", codigoCarta1);
+    printf("Nome da Cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
