@@ -4,7 +4,7 @@ int main(){
     char estado1, estado2;
     char codigoCarta1[3], codigoCarta2[3];
     char nomeCidade1[40], nomeCidade2[40];
-    int populacao1 = 0, populacao2;
+    int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
     int pontoTuristico1, pontoTuristico2;
@@ -14,56 +14,56 @@ int main(){
     //Inicio da digitação da CARTA 1
     printf("Vamos iniciar a digitação da CARTA 1: \n");
     printf("Digite uma letra de 'A' a 'H' para representar o estado da carta: \n");
-    scanf("%s", &estado1);
+    scanf("%c", &estado1);
 
     printf("Digite o número de 1 a 4 para o código da carta: \n");
-    scanf("%s", &codigoCarta1);
+    scanf("%s", codigoCarta1);
 
     printf("Digite o nome da cidade: \n");
     getchar(); //Limpa o buffer 
-    scanf("%[^\n]", &nomeCidade1); // Leitura do nome da cidade com espaços
-
+    scanf("%[^\n]", nomeCidade1); // Leitura do nome da cidade com espaços
+    
     printf("Digite a população da cidade: \n");
-    scanf("%d", &populacao1);
+    scanf("%d", populacao1);
 
     printf("Digite a área da cidade: \n");
-    scanf("%f", &area1);
+    scanf("%f", area1);
 
     printf("Digite o PIB da cidade: \n");
-    scanf("%f", &pib1);
+    scanf("%f", pib1);
 
     printf("Digite o número de pontos turísticos da cidade: \n");
-    scanf("%d", &pontoTuristico1);
+    scanf("%d", pontoTuristico1);
 
-    densidade1 = populacao1 / area1;
-    pibPerCapita1 = pib1 / populacao1;
+    densidade1 = (float) (populacao1 / area1);
+    pibPerCapita1 = (float) (pib1 / populacao1);
 
     //Inicio da digitação da CARTA 2
     printf("Vamos iniciar a digitação da CARTA 2: \n");
     printf("Digite uma letra de 'A' a 'H' para representar o estado da carta: \n");
-    scanf("%s", &estado2);
+    scanf("%c", estado2);
 
     printf("Digite o número de 1 a 4 para o código da carta: \n");
-    scanf("%s", &codigoCarta2);
+    scanf("%s", codigoCarta2);
 
     printf("Digite o nome da cidade: \n");
     getchar(); //Limpa o buffer 
-    scanf("%[^\n]", &nomeCidade2); // Leitura do nome da cidade com espaços
+    scanf("%[^\n]", nomeCidade2); // Leitura do nome da cidade com espaços
 
     printf("Digite a população da cidade: \n");
-    scanf("%d", &populacao2);
+    scanf("%d", populacao2);
 
     printf("Digite a área da cidade: \n");
-    scanf("%f", &area2);
+    scanf("%f", area2);
 
     printf("Digite o PIB da cidade: \n");
-    scanf("%f", &pib2);
+    scanf("%f", pib2);
 
     printf("Digite o número de pontos turísticos da cidade: \n");
-    scanf("%d", &pontoTuristico2);
+    scanf("%d", pontoTuristico2);
 
-    densidade2 = populacao2 / area2;
-    pibPerCapita2 = pib2 / populacao2;
+    densidade2 = (float) (populacao2 / area2);
+    pibPerCapita2 = (float) (pib2 / populacao2);
 
     //Exibição dos dados das cartas
     printf("Abaixo você irá visualizar os dados das cartas que você digitou. \n");
