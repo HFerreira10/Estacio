@@ -1,32 +1,64 @@
-# Desafio: nível mestre
+# Desafio: nível aventureiro
 Trabalhos da faculdade de Sistemas de Informação, disciplina Introdução à Programação de Computadores.
 
 ## Batalha de Cartas no Super Trunfo
 
-Permitir ao usuário inserir os dados de duas cartas, assim como nos níveis anteriores, mas com uma mudança importante: a população agora deve ser armazenada como unsigned long int para acomodar números maiores. As demais informações permanecem com os mesmos tipos. Após a
-leitura dos dados, seu programa deverá:
+O programa continuará lendo as mesmas informações do usuário (estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos) para duas cartas. A diferença é que, agora, seu programa também deve:
 
-Calcular a Densidade Populacional e o PIB per Capita: Assim como no nível intermediário, calcule e armazene esses valores.
-Calcular o Super Poder: Para cada carta, calcule o "Super Poder" somando todos os atributos numéricos (população, área, PIB, número de pontos turísticos, PIB per capita e o inverso da densidade populacional – quanto menor a densidade, maior o "poder"). Armazene o Super Poder como float.
+Calcular a Densidade Populacional: Divida a população da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado. Armazene esse valor em uma variável do tipo float.
 
-## Exemplo de Saída (após a entrada dos dados):
-Comparação de Cartas:
-População: Carta 1 venceu (1)
-Área: Carta 1 venceu (1)
-PIB: Carta 1 venceu (1)
-Pontos Turísticos: Carta 1 venceu (1)
-Densidade Populacional: Carta 2 venceu (0)
-PIB per Capita: Carta 1 venceu (1)
-Super Poder: Carta 1 venceu (1)
+Calcular o PIB per Capita: Divida o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade. Armazene esse valor em uma variável do tipo float.
+
+Exibir os Resultados: Além de exibir as informações lidas do usuário (como no nível básico), seu programa também deve exibir a densidade populacional e o PIB per capita calculados para cada cidade. Formate os valores de ponto flutuante com duas casas decimais.
+
+## Exemplo de Saída 
+Carta 1:
+
+Estado: A
+
+Código: A01
+
+Nome da Cidade: São Paulo
+
+População: 12325000
+
+Área: 1521.11 km²
+
+PIB: 699.28 bilhões de reais
+
+Número de Pontos Turísticos: 50
+
+Densidade Populacional: 8102.47 hab/km²
+
+PIB per Capita: 56724.32 reais
+
+Carta 2:
+
+Estado: B
+
+Código: B02
+
+Nome da Cidade: Rio de Janeiro
+
+População: 6748000
+
+Área: 1200.25 km²
+
+PIB: 300.50 bilhões de reais
+
+Número de Pontos Turísticos: 30
+
+Densidade Populacional: 5622.24 hab/km²
+
+PIB per Capita: 44532.91 reais
 
 ## Requisitos funcionais
-Manter as funcionalidades dos níveis básico e intermediário (leitura, cálculo e exibição dos dados das cartas, incluindo densidade populacional e PIB per capita).
+Manter as funcionalidades do nível básico (leitura e exibição dos dados das cartas).
 
-Calcular corretamente o Super Poder para cada carta.
-
-Comparar corretamente as cartas atributo por atributo, considerando a regra específica para densidade populacional.
-
-Exibir os resultados das comparações de forma clara e organizada.
+Calcular e exibir corretamente a densidade populacional e o PIB per capita para cada cidade.
 
 ## Requisitos não funcionais
-Manter os requisitos não funcionais dos níveis anteriores (usabilidade, legibilidade, corretude, eficiência).
+Manter os requisitos não funcionais do nível básico (usabilidade, legibilidade, corretude)
+
+Eficiência: O programa deve realizar os cálculos de forma eficiente.
+
